@@ -1,7 +1,7 @@
 import request from 'request';
 import { ETwitterStreamEvent, TwitterApi } from 'twitter-api-v2';
 
-const client = new TwitterApi("api token");
+const client = new TwitterApi("92babyy");
 const rules = await client.v2.streamRules();
 if (rules.data?.length) {
   await client.v2.updateStreamRules({
